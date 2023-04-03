@@ -1,0 +1,21 @@
+.rating {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+
+  .star {
+    width: 14px;
+    padding-right: 4px;
+  }
+  .ratingNum {
+    font-weight: 600;
+    color: #ffb33e;
+    padding-right: 4px;
+    padding-top: 1px;
+  }
+  .totalRatings {
+    color: #62646a;
+    padding-right: 4px;
+    font-size: 14px;
+  }
+}

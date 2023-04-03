@@ -1,0 +1,115 @@
+.featured {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-image: url("../../../public/img/hero_bg_images_desktop_x1/bg-hero-1-1792-x1.webp");
+  background-color: #013914;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1800px;
+
+  .img {
+  }
+  .container {
+    width: 94vw;
+    min-width: 450px;
+    max-width: 1340px;
+    display: flex;
+    align-items: center;
+
+    .left {
+      // position: absolute;
+      // top: 40%;
+      // left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      max-width: 650px;
+      margin-bottom: 64px;
+
+      h1 {
+        font-size: 50px;
+        letter-spacing: 0.7px;
+        line-height: 56px;
+
+        em {
+          font-family: "DomaineDispNar", sans-serif;
+          font-weight: 300;
+        }
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 5px;
+
+        .searchInput {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 10px;
+          img {
+            padding-left: 6px;
+            padding-top: 4px;
+            width: 17px;
+            height: 17px;
+          }
+          input {
+            font-size: 17px;
+            font-weight: 400;
+            border: none;
+            outline: none;
+
+            &::placeholder {
+              color: rgb(161, 161, 161);
+            }
+          }
+        }
+        button {
+          font-size: 16px;
+          font-weight: 600;
+          width: 120px;
+          height: 50px;
+          border: none;
+          background-color: #1dbf73;
+          color: white;
+          border-radius: 0px 5px 5px 0px;
+          cursor: pointer;
+          transition: all 0.1s ease-in-out;
+          &:hover {
+            background-color: #19a463;
+          }
+        }
+      }
+      .populer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          font-size: 14px;
+        }
+        button {
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          color: white;
+          background-color: transparent;
+          border: 1px solid white;
+          padding: 5px 10px;
+          border-radius: 20px;
+          font-size: 14px;
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            background-color: white;
+            color: #62646a;
+          }
+        }
+      }
+    }
+  }
+}

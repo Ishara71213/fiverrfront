@@ -1,0 +1,79 @@
+.bannerImage {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(13, 8, 77);
+  margin-top: 100px;
+
+  .container {
+    width: 94vw;
+    min-width: 450px;
+    max-width: 1340px;
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 0;
+  }
+  .left {
+    width: 500px;
+    .headLogo {
+      font-size: 33px;
+      color: #ffffff;
+      padding-bottom: 26px;
+      em {
+        font-weight: 400;
+      }
+    }
+    .mainTitle {
+      font-size: 33px;
+      color: #ffffff;
+      padding-bottom: 22px;
+      span {
+        font-family: "DomaineDispNar", sans-serif;
+        font-weight: 300;
+      }
+    }
+    .section {
+      padding-top: 6px;
+      padding-bottom: 32px;
+      p {
+        font-size: 21px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        color: #ffffff;
+        padding-bottom: 32px;
+        font-weight: 400;
+      }
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 16px;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+        h2 {
+          font-size: 14.5px;
+          color: #ffffff;
+          font-weight: 400;
+        }
+      }
+    }
+    button {
+      font-size: 16px;
+      font-weight: 600;
+      height: 42px;
+      padding: 0 25px;
+      border: none;
+      background-color: #1dbf73;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        background-color: #19a463;
+      }
+    }
+  }
+  .right {
+  }
+}

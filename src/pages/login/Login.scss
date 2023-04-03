@@ -1,0 +1,157 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5f5f5;
+  .container {
+    display: flex;
+    justify-content: center;
+    .loginForm-wrapper {
+      width: 400px;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border-radius: 4px;
+      .top {
+        padding: 0 36px;
+        padding-bottom: 24px;
+
+        h2 {
+          color: #404145;
+          font-size: 24px;
+          line-height: 130%;
+          font-weight: 700;
+          padding: 32px 0;
+          text-align: center;
+        }
+        .btn {
+          cursor: pointer;
+          display: block;
+          width: 100%;
+          font-size: 16px;
+          font-weight: 500;
+          border-radius: 4px;
+          padding: 12px 16px;
+          display: flex;
+          justify-content: center;
+          margin: 12px 0;
+          transition: 0.4s all ease;
+          &.facebook {
+            color: white;
+            background: #4267b2;
+            border: 1px solid #4267b2;
+            &:hover {
+              opacity: 0.9;
+            }
+          }
+          &.google,
+          &.apple {
+            color: #222325;
+            background: transparent;
+            border: 1px solid #e4e5e7;
+
+            &:hover {
+              background: #fafafa;
+            }
+          }
+          &.loginBtn {
+            color: white;
+            background: #1dbf73;
+            border: 1px solid transparent;
+            font-weight: 500;
+            &:hover {
+              background: #19a463;
+            }
+          }
+        }
+        .divider {
+          position: relative;
+          border-bottom: 1px solid #e4e5e7;
+          height: 12px;
+          margin: 20px 0 32px;
+
+          p {
+            position: absolute;
+            left: 45%;
+            background-color: #fff;
+            color: #62646a;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            padding: 0 8px;
+          }
+        }
+        .username,
+        .password {
+          padding-bottom: 16px;
+
+          .input {
+            border: 1px solid #c5c6c9;
+            border-radius: 4px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #404145;
+            font-size: 16px;
+            padding: 12px 12px;
+            -webkit-transition: 0.15s ease-in-out;
+            -o-transition: 0.15s ease-in-out;
+            transition: 0.15s ease-in-out;
+            width: 100%;
+            outline: none;
+          }
+          .error {
+            display: block;
+            color: red;
+            padding-top: 8px;
+          }
+        }
+
+        .recover-remember {
+          padding-top: 12px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 15px;
+          line-height: 21px;
+          .rememberme {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #404145;
+            .checkBox {
+            }
+          }
+          .forgotPw {
+            cursor: pointer;
+            color: #1dbf73;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .bottom {
+        border-top: 1px solid #dadbdd;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 21px;
+        color: #62646a;
+        .optionBtn {
+          padding-left: 4px;
+          color: #1dbf73;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

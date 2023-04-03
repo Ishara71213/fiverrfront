@@ -1,0 +1,97 @@
+.messages {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  padding-bottom: 140px;
+  .container {
+    width: 94vw;
+    min-width: 450px;
+    max-width: 1340px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      padding-bottom: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        padding: 8px 0;
+        color: #222325;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36px;
+      }
+    }
+    .gigList {
+      display: flex;
+      justify-content: center;
+      table {
+        width: 100%;
+        text-align: left;
+
+        border-collapse: collapse;
+        tr {
+          height: 70px;
+          border-bottom: 1px solid #e3e3e3;
+          th {
+            padding-left: 80px;
+            color: #404145;
+          }
+          .gigTitle {
+            cursor: pointer;
+            &:hover {
+              color: #19a463;
+            }
+          }
+          td {
+            max-width: 150px;
+            padding-left: 80px;
+            margin-top: 6px;
+            .userDetails {
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              h3 {
+                font-size: 16px;
+                font-weight: 600;
+                padding-bottom: 3px;
+              }
+            }
+            .messageBody {
+              p {
+                font-size: 15px;
+                line-height: 20px;
+              }
+            }
+            .gigImage {
+              cursor: pointer;
+              margin-left: 8px;
+              border-radius: 5px;
+              object-fit: cover;
+            }
+
+            .markASRead {
+              width: 120px;
+              padding: 10px 10px;
+              font-size: 14px;
+              font-weight: 500;
+              border: none;
+              background-color: #1dbf73;
+              color: white;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: all 0.1s ease-in-out;
+              &:hover {
+                background-color: #19a463;
+              }
+            }
+          }
+          &.active {
+            background-color: #1dbf730f;
+          }
+        }
+      }
+    }
+  }
+}

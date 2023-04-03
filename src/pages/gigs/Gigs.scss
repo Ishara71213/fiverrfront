@@ -1,0 +1,123 @@
+.gigs {
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 94vw;
+    min-width: 450px;
+    max-width: 1340px;
+    display: flex;
+    flex-direction: column;
+
+    .headSection {
+      padding-top: 38px;
+
+      .breadcrumbs {
+        padding-bottom: 10px;
+        p {
+          font-size: 14px;
+          color: #74767e;
+        }
+      }
+      h1 {
+        padding: 8px 0;
+        color: #222325;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36px;
+      }
+      .title-description {
+        padding-top: 10px;
+        font-size: 18px;
+        color: #74767e;
+        letter-spacing: 0.2px;
+      }
+    }
+    .sort {
+      padding-bottom: 36px;
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p {
+          color: #74767e;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .budgetInput {
+          font-size: 15px;
+          width: 120px;
+          padding: 4px 8px;
+          border: 1px solid #74767e;
+          border-radius: 4px;
+          outline: none;
+        }
+        button {
+          font-size: 12px;
+          font-weight: 500;
+          padding: 6px 12px;
+          border: none;
+          background-color: #1dbf73;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.1s ease-in-out;
+          &:hover {
+            background-color: #19a463;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        color: #74767e;
+        position: relative;
+      }
+      span {
+        padding-left: 8px;
+        color: #222325;
+      }
+      img {
+        cursor: pointer;
+        width: 18px;
+        padding-left: 4px;
+        padding-top: 2px;
+      }
+
+      .sortCat {
+        font-size: 16px;
+        font-weight: 500;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 16px;
+        background-color: white;
+        border-radius: 5px;
+        border: 0.5px solid lightgray;
+        top: 30px;
+        right: 0;
+
+        &.none {
+          display: none;
+        }
+
+        span {
+          cursor: pointer;
+          padding: 0;
+        }
+      }
+    }
+    .gigContainer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+    }
+  }
+}

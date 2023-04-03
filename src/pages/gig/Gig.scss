@@ -1,0 +1,272 @@
+.gig {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  .container {
+    width: 94vw;
+    min-width: 450px;
+    max-width: 1340px;
+    display: flex;
+    flex-direction: column;
+    .grid {
+      display: flex;
+      .left {
+        padding: 0 32px;
+        width: 50%;
+        padding-right: 9%;
+        .breadcrumbs {
+          padding-bottom: 18px;
+          p {
+            font-size: 14px;
+            color: #74767e;
+          }
+        }
+        .gigName {
+          padding-bottom: 16px;
+          color: #404145;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 36px;
+        }
+        .profile {
+          display: flex;
+          align-items: center;
+          .profileImg {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 16px;
+          }
+          .userName {
+            color: #404145;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 700;
+            margin-right: 8px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          .divider {
+            margin-right: 8px;
+            color: #acacac;
+          }
+          // .rating {
+          //   display: flex;
+          //   align-items: center;
+          //   margin-right: 8px;
+
+          //   .star {
+          //     width: 14px;
+          //     padding-left: 4px;
+          //   }
+          //   .ratingNum {
+          //     font-weight: 600;
+          //     color: #ffb33e;
+          //     padding-left: 4px;
+          //     padding-top: 1px;
+          //   }
+          //   .totalRatings {
+          //     color: #62646a;
+          //     padding-left: 4px;
+          //     font-size: 14px;
+          //   }
+          // }
+          .ordersQueue {
+            color: #62646a;
+            font-size: 14px;
+          }
+        }
+        .gigImgSlider {
+          padding: 20px 0;
+          .carousel-track {
+            margin: 0px;
+          }
+          .imgContainer {
+            height: 427px;
+            width: 100%;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            border: 1px solid #efeff0;
+            .imgwrapper {
+              display: flex;
+              justify-content: center;
+              img {
+                // margin-left: -10px;
+                height: 427px;
+                width: auto;
+                overflow: visible;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+        .gigDescription {
+          .title {
+            padding: 16px 0;
+            color: #404145;
+          }
+          .desc {
+            padding: 10px 0;
+            line-height: 22px;
+            color: #62646a;
+          }
+        }
+        .aboutTheSeller {
+          color: #404145;
+          font-size: 20px;
+          font-weight: 700;
+          padding-top: 60px;
+          padding-bottom: 30px;
+        }
+        .profileCard {
+          .sellerInfo {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            padding-bottom: 24px;
+            .profileImg {
+              width: 110px;
+              height: 110px;
+              object-fit: cover;
+              border-radius: 50%;
+            }
+            .details {
+              display: flex;
+              flex-direction: column;
+              .sellerName {
+                color: #62646a;
+                font-size: 18px;
+                padding-bottom: 5px;
+              }
+              .services {
+                color: #62646a;
+                font-size: 16px;
+                padding-bottom: 4px;
+              }
+              .contactBtn {
+                font-weight: 500;
+                font-size: 15px;
+                margin-top: 20px;
+                width: 130px;
+                padding: 11px 0;
+                background-color: transparent;
+                color: #5c5d5f;
+                border: 1px solid #5c5d5f;
+                border-radius: 5px;
+                transition: 0.2s all ease;
+                cursor: pointer;
+                &:hover {
+                  color: #fff;
+                  background-color: #74767e;
+                  border-color: #74767e;
+                }
+              }
+            }
+          }
+          .sellerDesc {
+            border: 1px solid #dadbdd;
+            border-radius: 3px;
+            padding: 24px;
+            color: #62646a;
+            .top {
+              .content-wrapper {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+
+                .content {
+                  padding-bottom: 16px;
+                  strong {
+                    display: block;
+                    padding-top: 4px;
+                  }
+                }
+              }
+            }
+            .devider {
+              height: 0.5px;
+              border: none;
+              background-color: #dadbdd;
+            }
+            .bottom {
+              padding-top: 16px;
+              line-height: 24px;
+              font-size: 17px;
+            }
+          }
+        }
+        .reviews-wrap {
+          margin-top: 40px;
+        }
+      }
+      .right {
+        margin-top: 32px;
+        border: 1px solid #acacac;
+        padding: 32px;
+        width: 420px;
+        height: fit-content;
+        position: sticky;
+        top: 187px;
+        left: 0;
+        .titleAndPrice {
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: #404145;
+          .title {
+            font-size: 20px;
+          }
+          .price {
+            font-weight: 400;
+          }
+        }
+        .packageDesc {
+          margin-top: 24px;
+          font-size: 16px;
+          color: #62646a;
+        }
+        .deliveryDetails {
+          display: flex;
+          justify-content: space-between;
+          font-weight: 500;
+          color: #62646a;
+          margin-top: 40px;
+          margin-bottom: 28px;
+          .deliveryAndRevision {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+        .services {
+          margin-bottom: 25px;
+          .service {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 8px;
+            color: #95979d;
+          }
+        }
+        .continueBtn {
+          width: 100%;
+          padding: 16px 16px;
+          font-size: 18px;
+          font-weight: 500;
+          border: none;
+          background-color: #1dbf73;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.1s ease-in-out;
+          &:hover {
+            background-color: #19a463;
+          }
+        }
+      }
+    }
+  }
+}

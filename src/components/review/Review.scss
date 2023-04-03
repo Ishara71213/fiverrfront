@@ -1,0 +1,91 @@
+.review {
+  display: flex;
+
+  .container {
+    padding-bottom: 40px;
+    .divider {
+      width: 100%;
+      height: 1px;
+      border: none;
+      background-color: #dadbdd;
+    }
+
+    .profileSection {
+      padding-top: 40px;
+      display: flex;
+      align-items: center;
+      .details {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .userName {
+          font-size: 16px;
+          color: #404145;
+        }
+        .country {
+          font-size: 14px;
+          color: #62646a;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+      }
+    }
+    .review-content {
+      margin-top: 20px;
+      margin-left: 64px;
+      .reviewAndTime {
+        display: flex;
+        align-items: center;
+        color: #62646a;
+        .seperate {
+          margin-right: 8px;
+          font-size: 18px;
+          font-weight: 200;
+        }
+        .duration {
+          margin-top: 1px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #5c5d60;
+        }
+      }
+      .reviewText {
+        line-height: 22px;
+        margin-top: 12px;
+        color: #404145;
+      }
+      .helpful {
+        margin-top: 16px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: #404145;
+
+        .rateReview-yes {
+          cursor: pointer;
+          display: flex;
+          gap: 4px;
+          align-items: center;
+          .rateIcon {
+            margin-top: 2px;
+            width: 14px;
+          }
+        }
+        .rateReview-no {
+          cursor: pointer;
+          display: flex;
+          gap: 4px;
+          align-items: center;
+          .rateIcon {
+            width: 14px;
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+  }
+}

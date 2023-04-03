@@ -1,0 +1,125 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #013914;
+  color: white;
+
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+
+  transition-property: color, background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  // transition: 0.5s all ease;
+  &.active {
+    background-color: white;
+    color: #62646a;
+  }
+
+  .container {
+    width: 94vw;
+    min-width: 450px;
+    max-width: 1340px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 32px;
+
+    .logo {
+      font-size: 34px;
+      font-weight: 800;
+      .text {
+        color: white;
+        &.active {
+          color: #404145;
+        }
+      }
+      .dot {
+        color: #1dbf73;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+
+    span {
+      cursor: pointer;
+      transition: 0.2s all ease;
+      &:hover {
+        color: #1dbf73;
+      }
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      position: relative;
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .options {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: grey;
+        width: 200px;
+        font-weight: 400;
+      }
+    }
+    button {
+      font-weight: 500;
+      //   font-size: 15px;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: 1px solid white;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #1dbf73;
+        border-color: #1dbf73;
+      }
+    }
+  }
+  hr {
+    width: 100%;
+    height: 0px;
+    border: 0.1px solid rgb(224, 224, 224);
+  }
+  .menu {
+    width: 100%;
+    min-width: 900px;
+    max-width: 1340px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    color: gray;
+    .navLink {
+      cursor: pointer;
+      transition: 0.1s all ease;
+      &:hover {
+        color: #1dbf73;
+      }
+    }
+  }
+}

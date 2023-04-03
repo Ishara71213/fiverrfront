@@ -1,0 +1,87 @@
+.addGig {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  padding-bottom: 140px;
+  .container {
+    width: 94vw;
+    min-width: 450px;
+    max-width: 1340px;
+    display: flex;
+    flex-direction: column;
+
+    .createGig {
+      padding-top: 40px;
+      //   display: grid;
+      //   grid-template-columns: 1fr 1fr;
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+
+      .left,
+      .right {
+        width: 46%;
+        .pdb {
+          margin-top: 16px;
+        }
+        textarea {
+          outline: none;
+          border-radius: 4px;
+          padding: 10px 16px;
+          font-size: 16px;
+        }
+        label {
+          //   padding-top: 16px;
+          display: flex;
+          flex-direction: column;
+          font-size: 18px;
+          font-weight: 600;
+          color: #404145;
+          padding-bottom: 20px;
+          .textInput {
+            font-size: 16px;
+            margin: 8px 0;
+            padding: 10px 16px;
+            border-radius: 4px;
+            border: 1px solid #868688;
+            outline: none;
+          }
+        }
+      }
+      .left {
+        .createBtn {
+          width: 100%;
+          padding: 16px 16px;
+          font-size: 18px;
+          font-weight: 500;
+          border: none;
+          background-color: #1dbf73;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.1s ease-in-out;
+          &:hover {
+            background-color: #19a463;
+          }
+        }
+      }
+      .right {
+        textarea {
+          height: 80px;
+        }
+        .inputCont {
+          display: flex;
+          gap: 20px;
+          justify-content: space-between;
+          .textInput {
+            width: 150px;
+          }
+        }
+        .features {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

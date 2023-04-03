@@ -1,0 +1,48 @@
+.bannerVideo {
+  display: flex;
+  justify-content: center;
+  background-color: #f1fdf7;
+  .container {
+    width: 94vw;
+    min-width: 450px;
+    max-width: 1340px;
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 0;
+
+    .left {
+      width: 420px;
+      h1 {
+        font-size: 33px;
+        color: #404145;
+        padding-bottom: 24px;
+      }
+      .section {
+        .title {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding-bottom: 8px;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+          h2 {
+            font-size: 18px;
+            color: #404145;
+            font-weight: 600;
+          }
+        }
+        p {
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0.2px;
+          color: #62646a;
+          padding-bottom: 24px;
+        }
+      }
+    }
+    .right {
+    }
+  }
+}
