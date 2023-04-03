@@ -15,6 +15,8 @@ const Login = () => {
     try {
       const res = await newRequest.post("auth/login", { userName, password });
       localStorage.setItem("currentUser", JSON.stringify(res.data));
+      document.cookie =
+        "accessToke=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjZjZjNlMjA0NDdkN2VkNmFkZTcxNCIsImlzU2VsbGVyIjp0cnVlLCJpYXQiOjE2ODA1MTIxMTl9.Gb-0j7mh2w-5U95tTbQ3HNWg19xfPrcb7NvQo8OEAx0; Path=/";
       navigate("/");
     } catch (err) {
       console.log(err.response.data);
